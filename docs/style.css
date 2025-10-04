@@ -153,7 +153,7 @@ h1 {
   font-size: 38px;
   color: #354227;
   line-height: 43px;
-  margin-bottom: 61px;
+  margin-bottom: 65px;
   text-align: center;
 }
 
@@ -673,7 +673,7 @@ footer picture img {
   .header p {
     font-size: 20px;
     line-height: 26px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     padding: 0 10px;
   }
 
@@ -693,8 +693,8 @@ footer picture img {
 
   .servicos h2,
   .como-funciona-title {
-    margin-top: 19px;
-    margin-bottom: -87px;
+    margin-top: 25px;
+    margin-bottom: -101px;
     font-size: 36px;
   }
 
@@ -727,7 +727,8 @@ footer picture img {
   }
 
   .servico-title {
-    margin-top: -13.5px;
+    margin-top: 23px;
+    margin-bottom: 32px;
   }
 
   .bold {
@@ -773,7 +774,7 @@ footer picture img {
   .socia-item {
     flex-direction: column;
     text-align: center;
-    margin: 0 20px 40px 20px;
+    margin: 0 20px 55px 20px;
   }
 
   .tipo2 {
@@ -784,7 +785,7 @@ footer picture img {
   .socia-item img {
     width: 250px;
     height: 250px;
-    margin-bottom: 20px;
+    margin-bottom: -10px;
   }
 
   .socia-item p {
@@ -795,11 +796,14 @@ footer picture img {
 
   .socias-title {
     line-height: 45px;
+    margin-top: 92px;
+    margin-bottom: 54px;
   }
 
   .perguntas-title {
-    margin-top: 48px;
+    margin-top: 90px;
     line-height: 45px;
+    margin-bottom: 42px;
   }
 
   .faq-container {
