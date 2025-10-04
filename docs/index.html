@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tresamí</title>
+</head>
+
+<body>
+    <div class="detalhe-global"></div>
+    <div class="fundo-global"></div>
+    <div class="navbar">
+        <div>
+            <picture>
+                <source srcset="assets/imagens/Tresami Logo.avif" type="image/avif">
+                <source srcset="assets/imagens/Tresami Logo.webp" type="image/webp">
+                <img src="assets/imagens/Tresami Logo.png" class="logo">
+            </picture>
+            <div class="nav-icone">
+                <a href="https://www.instagram.com/tresamicuidadosexclusivos/" target="_blank"
+                    rel="noopener noreferrer">
+                    <picture class="btninsta">
+                        <source srcset="assets/imagens/Instagram1.avif" type="image/avif">
+                        <source srcset="assets/imagens/Instagram1.webp" type="image/webp">
+                        <img src="assets/imagens/Instagram1.png">
+                </a>
+                </picture>
+                <a href="https://wa.me/554888251995?text=Ol%C3%A1,%20equipe%20Tresam%C3%AD!%20Desejo%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20atendimentos."
+                    target="_blank" rel="noopener noreferrer" class="btnwpp">
+                    <picture class="btnwpp">
+                        <source srcset="assets/imagens/WhatsApp1.avif" type="image/avif">
+                        <source srcset="assets/imagens/WhatsApp1.webp" type="image/webp">
+                        <img src="assets/imagens/Whatsapp1.png">
+                </a>
+                </picture>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header">
+            <h1 class="sobre-title">SOBRE NÓS</h1>
+            <p>
+                Somos uma empresa especializada em serviços<br>
+                domiciliares humanizados, liderada por três<br>
+                sócias com mais de 20 anos de experiência na<br>
+                área da saúde.
+            </p>
+            <div style="text-align: center;">
+                <a href="https://wa.me/554888251995?text=Ol%C3%A1,%20equipe%20Tresam%C3%AD!%20Desejo%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20atendimentos."
+                    target="_blank" rel="noopener noreferrer">
+                    <button>Agende consulta grátis</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="detalhe"></div>
+    <br>
+    <br>
+    <div class="como-funciona-title">
+        <h1>COMO FUNCIONA</h1>
+    </div>
+    <section class="como-funciona-section">
+        <div class="servicos-grid">
+            <!-- Classes de animação para os 3 primeiros itens -->
+            <div class="servico-item scroll-animate" data-delay="0">
+                <img src="assets/imagens/1.png" alt="Consulta inicial" id="um" class="servico-icon">
+            </div>
+
+            <div class="servico-item scroll-animate" data-delay="200">
+                <img src="assets/imagens/2.png" alt="Elaboração de plano" id="dois" class="servico-icon">
+            </div>
+
+            <div class="servico-item scroll-animate" data-delay="400">
+                <img src="assets/imagens/3.png" alt="Atendimentos" id="tres" class="servico-icon">
+            </div>
+
+            <!-- Classes de animação para os 3 últimos itens -->
+            <div class="servico-item scroll-animate" data-delay="600">
+                <img src="assets/imagens/4.png" alt="Registros" id="quatro" class="servico-icon">
+            </div>
+
+            <div class="servico-item scroll-animate" data-delay="800">
+                <img src="assets/imagens/5.png" alt="Feedbacks" id="cinco" class="servico-icon">
+            </div>
+
+            <div class="servico-item scroll-animate" data-delay="1000">
+                <img src="assets/imagens/6.png" alt="Acompanhamento" id="seis" class="servico-icon">
+            </div>
+        </div>
+    </section>
+
+    <div class="servico">
+        <h1 class="servico-title">SERVIÇOS</h1>
+    </div>
+    <div class="carrossel-container">
+        <button class="arrow left" id="leftArrow">‹</button>
+
+        <div class="carrossel" id="carrossel">
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Fisioterapia.avif" type="image/avif">
+                    <source srcset="assets/imagens/Fisioterapia.webp" type="image/webp">
+                    <img src="assets/imagens/Fisioteraia.png" alt="Fisioterapia">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">FISIOTERAPIA</span><br><br>
+                        <span class="servico-text">Movimente-se com liberdade e segurança sem sair de casa. Atendimento
+                            personalizado,
+                            respeitando seu ritmo e celebrando cada conquista.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Fonoterapia.avif" type="image/avif">
+                    <source srcset="assets/imagens/Fonoterapia.webp" type="image/webp">
+                    <img src="assets/imagens/Fonoterapia.png" alt="Fonoterapia">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">FONOTERAPIA</span><br><br>
+                        <span class="servico-text">Sua voz merece cuidado especial. Técnicas e acolhimento para melhorar
+                            a comunicação,
+                            fortalecer a voz e aumentar a confiança.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Nutricao.avif" type="image/avif">
+                    <source srcset="assets/imagens/Nutricao.webp" type="image/webp">
+                    <img src="assets/imagens/Nutricao.png" alt="Nutrição">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">NUTRIÇÃO</span><br><br>
+                        <span class="servico-text">Mais que cardápio: cuidado que respeita seu estilo de vida,
+                            promovendo saúde e prazer ao
+                            se alimentar.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Odonto.avif" type="image/avif">
+                    <source srcset="assets/imagens/Odonto.webp" type="image/webp">
+                    <img src="assets/imagens/Odonto.png" alt="Odontologia">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">ODONTOLOGIA</span><br><br>
+                        <span class="servico-text">Sorriso cuidado com delicadeza no conforto do lar. Prevenção,
+                            estética e bem-estar com
+                            segurança e qualidade.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Terapia Ocupacional.avif" type="image/avif">
+                    <source srcset="assets/imagens/Terapia Ocupacional.webp" type="image/webp">
+                    <img src="assets/imagens/Terapia Ocupacional.png" alt="Terapia Ocupacional">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">TERAPIA OCUPACIONAL</span><br><br>
+                        <span class="servico-text">Atividades criativas para desenvolver habilidades, fortalecer a
+                            autonomia e melhorar a
+                            qualidade de vida.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Arteterapia.avif" type="image/avif">
+                    <source srcset="assets/imagens/Arteterapia.webp" type="image/webp">
+                    <img src="assets/imagens/Arteterapia.png" alt="Arteterapia">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">ARTETERAPIA</span><br><br>
+                        <span class="servico-text">Atendimento personalizado no conforto do lar, usando crochê, tricô e
+                            musicalidade para estimular emoções, promover equilíbrio e bem-estar mental.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Psicologia.avif" type="image/avif">
+                    <source srcset="assets/imagens/Psicologia.webp" type="image/webp">
+                    <img src="assets/imagens/Psicologia.png" alt="Psicologia">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">PSICOLOGIA</span><br><br>
+                        <span class="servico-text">Espaço seguro para acolher emoções, lidar com desafios e enfrentar
+                            momentos difíceis, como o luto, promovendo o fortalecimento da saúde mental e o cuidado com
+                            o bem-estar emocional.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Massoterapia.avif" type="image/avif">
+                    <source srcset="assets/imagens/Massoterapia.webp" type="image/webp">
+                    <img src="assets/imagens/Massoterapia.png" alt="Massoterapia">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">MASSOTERAPIA</span><br><br>
+                        <span class="servico-text">Técnicas de massagem para aliviar tensões, relaxar e renovar as
+                            energias sem sair de
+                            casa.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Passeio.avif" type="image/avif">
+                    <source srcset="assets/imagens/Passeio.webp" type="image/webp">
+                    <img src="assets/imagens/Passeio.png" alt="Acompanhantes para Passeios">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">ACOMPANHANTES PARA PASSEIOS</span><br><br>
+                        <span class="servico-text">Segurança, conforto e boa companhia para tornar cada saída mais leve
+                            e acolhedora, incluindo o acompanhamento em consultas médicas e em atividades nas quais os
+                            familiares não possam estar presentes.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Estetica.avif" type="image/avif">
+                    <source srcset="assets/imagens/Estetica.webp" type="image/webp">
+                    <img src="assets/imagens/Estetica.png" alt="Serviços de Estética">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">SERVIÇOS DE ESTÉTICA</span><br><br>
+                        <span class="servico-text">Momentos dedicados a autoestima por meio de práticas de autocuidado e
+                            estética que promovem confiança, leveza e reconexão consigo mesmo.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Livro de Memorias.avif" type="image/avif">
+                    <source srcset="assets/imagens/Livro de Memorias.webp" type="image/webp">
+                    <img src="assets/imagens/Livro de Memorias.png" alt="Livro de Memórias">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">LIVRO DE MEMÓRIAS</span><br><br>
+                        <span class="servico-text">Uma forma carinhosa de guardar histórias, fotos e recordações,
+                            valorizando a trajetória de vida, estimulando o cognitivo e criando uma lembrança afetiva
+                            para as futuras gerações.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Estimulo Cognitivo.avif" type="image/avif">
+                    <source srcset="assets/imagens/Estimulo Cognitivo.webp" type="image/webp">
+                    <img src="assets/imagens/Estimulo Cognitivo.png" alt="Estímulo Cognitivo">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">ESTÍMULO COGNITIVO</span><br><br>
+                        <span class="servico-text">Companhia para jogos de tabuleiro, atividades lúdicas e experiências
+                            na cozinha. Uma maneira divertida de exercitar a memória, a atenção e a criatividade.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Idiomas.avif" type="image/avif">
+                    <source srcset="assets/imagens/Idiomas.webp" type="image/webp">
+                    <img src="assets/imagens/Idiomas.png" alt="Aulas de Idiomas">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">AULAS DE IDIOMAS</span><br><br>
+                        <span class="servico-text">Aprendizado leve e prático, adaptado ao seu ritmo e objetivos, com
+                            estímulo ao cognitivo por meio do contato com outros idiomas, despertando novos desafios e
+                            ampliando horizontes.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Yoga.avif" type="image/avif">
+                    <source srcset="assets/imagens/Yoga.webp" type="image/webp">
+                    <img src="assets/imagens/Yoga.png" alt="Aulas de Yoga">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">AULAS DE YOGA</span><br><br>
+                        <span class="servico-text">Mais flexibilidade, força e serenidade com aulas
+                            personalizadas.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="carrossel-item">
+                <picture>
+                    <source srcset="assets/imagens/Tai Chi.avif" type="image/avif">
+                    <source srcset="assets/imagens/Tai Chi.webp" type="image/webp">
+                    <img src="assets/imagens/Tai Chi.png" alt="Aulas de Tai Chi">
+                </picture>
+                <div class="overlay">
+                    <p>
+                        <span class="bold">AULAS DE TAI CHI</span><br><br>
+                        <span class="servico-text">rática suave no conforto do lar que melhora equilíbrio, flexibilidade
+                            e bem-estar, promovendo relaxamento e saúde.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="arrow right" id="rightArrow">›</button>
+    </div>
+    <div class="indicators" id="indicators"></div>
+    <div style="text-align: center;" class="btn-servico">
+        <a href="https://wa.me/554888251995?text=Ol%C3%A1,%20equipe%20Tresam%C3%AD!%20Desejo%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20atendimentos."
+            target="_blank" rel="noopener noreferrer">
+            <button>Fale conosco</button>
+        </a>
+    </div>
+
+    <div class="socias-title">
+        <h1>SÓCIAS FUNDADORAS</h1>
+    </div>
+    <div class="socia-item tipo1">
+        <picture>
+            <source srcset="assets/imagens/Socia1.avif" type="image/avif">
+            <source srcset="assets/imagens/Socia1.webp" type="image/webp">
+            <img src="assets/imagens/Socia1.png" alt="Sócia Giovanna">
+        </picture>
+        <p>
+            <span class="nome">Giovanna Stefanello</span> é médica hematologista
+            mestre em leucemias agudas com vasta
+            experiência em onco-hematologia e
+            tendimento humanizado.
+        </p>
+    </div>
+    <div class="socia-item tipo2">
+        <p>
+            <span class="nome">Patrícia Fraga</span> é doutora em Serviço Social,
+            com experiência na área da saúde e no
+            fortalecimento dos vínculos familiares.
+
+        </p>
+        <picture>
+            <source srcset="assets/imagens/Socia2.avif" type="image/avif">
+            <source srcset="assets/imagens/Socia2.webp" type="image/webp">
+            <img src="assets/imagens/Socia2.png" alt="Sócia Patrícia">
+        </picture>
+    </div>
+    <div class="socia-item tipo1">
+        <picture>
+            <source srcset="assets/imagens/Socia3.avif" type="image/avif">
+            <source srcset="assets/imagens/Socia3.webp" type="image/webp">
+            <img src="assets/imagens/Socia3.png" alt="Sócia Marieni">
+        </picture>
+        <p>
+            <span class="nome">Marieni Cademartori</span> é enfermeira,
+            especialista em oncologia, com longa
+            experiência profissional unindo técnica e empatia.
+        </p>
+    </div>
+    
+    <div class="perguntas-title">
+        <h1>PERGUNTAS FREQUENTES</h1>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(0)">
+                <span class="question-text">
+                    <span class="faq-number">1.</span>O que é a Tresami?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    A Tresamí é uma empresa especializada em atendimento domiciliar humanizado e personalizado.
+                    Conectamos você e sua família a uma equipe multiprofissional de saúde e bem-estar para cuidar de
+                    forma integral, no conforto da sua casa.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(1)">
+                <span class="question-text">
+                    <span class="faq-number">2.</span>O que é o atendimento "360 graus"?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content"> É a nossa primeira etapa de cuidado, gratuita e, totalmente sem
+                    compromisso. Realizamos uma avaliação sobre suas condições de vida, saúde, autonomia, alimentação,
+                    relações sociais, moradia e necessidades específicas. E, a partir dessa análise, montamos um plano
+                    de cuidados personalizado.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(2)">
+                <span class="question-text">
+                    <span class="faq-number">3.</span>Quais tipos de profissionais fazem parte da equipe?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    Temos profissionais de diferentes áreas como fisioterapeutas, psicólogos, terapeutas ocupacionais,
+                    dentistas, técnicos de enfermagem, nutricionistas, fonoaudiólogos, massoterapêutas, esteticistas,
+                    professores de idiomas, yoga, artes, música, canto entre outros, todos trabalhando de forma
+                    integrada.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(3)">
+                <span class="question-text">
+                    <span class="faq-number">4.</span> Os atendimentos são sempre em casa?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    Sim. Nossa proposta é levar o cuidado até você, garantindo comodidade, segurança e um ambiente mais
+                    acolhedor para quem recebe o atendimento.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(4)">
+                <span class="question-text">
+                    <span class="faq-number">5.</span>Vocês atendem apenas idosos?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    Não. Nossos serviços são voltados para pessoas adultas em geral que desejem cuidados de saúde
+                    e bem-estar no domicílio, incluindo pessoas com deficiência, em recuperação pós-cirúrgica, com
+                    doenças crônicas ou que buscam melhorar qualidade de vida.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(5)">
+                <span class="question-text">
+                    <span class="faq-number">6.</span>Os horários e datas dos atendimentos são fixos?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    Sim. Os pacotes são personalizados e adaptáveis
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(6)">
+                <span class="question-text">
+                    <span class="faq-number">7.</span>Como funciona a contratação?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    Você entra em contato conosco, agendamos o atendimento “360 graus” gratuito, elaboramos uma proposta
+                    de pacote personalizado e lhe apresentamos. Caso você opte pela contratação do pacote o pagamento
+                    dos serviços é feito de forma simples e segura, com emissão de nota fiscal.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(7)">
+                <span class="question-text">
+                    <span class="faq-number">8.</span>Vocês oferecem pacotes mensais?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    Sim. Criamos pacotes totalmente personalizados e adaptáveis conforme a necessidade e evolução do
+                    cliente e de sua família, podendo incluir diferentes profissionais e quantidades de atendimentos.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(8)">
+                <span class="question-text">
+                    <span class="faq-number">9.</span>Como faço para solicitar um orçamento?
+                </span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="answer-content">
+                    Basta agendar o atendimento “360 graus” gratuito e sem compromisso pelo WhatsApp, telefone ou aqui
+                    mesmo pelo site. Depois dessa avaliação inicial, enviaremos uma proposta personalizada.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="text-footer">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tresami.contato@gmail.com&su=Contato&body=Ol%C3%A1%20equipe%20Tresam%C3%AD,%0APor%20favor,%20entrem%20em%20contato%20comigo."
+                target="_blank" rel="noopener noreferrer" class="item">
+                <img src="assets/imagens/Email.svg" class="icon" alt="E-mail">
+                <span class="label">tresami.contato@gmail.com</span>
+            </a>
+
+            <a href="https://instagram.com/tresamicuidados" target="_blank" rel="noopener noreferrer" class="item">
+                <img src="assets/imagens/Instagram2.svg" class="icon" alt="Instagram">
+                <span class="label">@tresamicuidados</span>
+            </a>
+
+            <a href="https://wa.me/554888251995?text=Ol%C3%A1,%20equipe%20Tresam%C3%AD!%20Desejo%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20atendimentos."
+                target="_blank" rel="noopener noreferrer" class="item">
+                <img src="assets/imagens/Whatsapp2.svg" class="icon" alt="WhatsApp">
+                <span class="label">(48) 8825-1995</span>
+            </a>
+        </div>
+        <picture>
+            <source srcset="assets/imagens/Tresami Vertical Branco.avif" type="image/avif">
+            <source srcset="assets/imagens/Tresami Vertical Branco.webp" type="image/webp">
+            <img src="assets/imagens/Tresami Vertical Branco.png" alt="Logo Tresamí">
+        </picture>
+        <div class="copyright">
+            <p>&copy; <span id="ano">2025</span> Tresamí. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
