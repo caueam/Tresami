@@ -21,7 +21,7 @@ class ImageCarrossel {
 
     if (this.isMobile) {
       this.bindScrollEvent()
-      this.bindTouchEvents() 
+      this.bindTouchEvents()
       this.hideArrows()
     } else {
       this.bindArrowEvents()
@@ -95,7 +95,7 @@ class ImageCarrossel {
 
       const endX = e.changedTouches[0].clientX
       const diffX = startX - endX
-      const threshold = 50 
+      const threshold = 50
 
       if (Math.abs(diffX) > threshold) {
         if (diffX > 0) {
@@ -137,6 +137,12 @@ class ImageCarrossel {
     for (let i = 0; i < indicatorCount; i++) {
       const indicator = document.createElement("button")
       indicator.className = "indicator"
+
+      // 🔹 Acessibilidade: nome para leitores de tela
+      indicator.setAttribute("aria-label", `Slide ${i + 1}`)
+      indicator.setAttribute("aria-controls", "carousel") // opcional, se tiver id do container
+      indicator.setAttribute("aria-current", i === 0 ? "true" : "false") // opcional, indica qual está ativo
+
       indicator.addEventListener("click", () => {
         if (this.isMobile) {
           this.goToSlide(i)
