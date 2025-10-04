@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://68e0c52c3b140c84f3f47630--glowing-gingersnap-8afb11.netlify.app/sitemap.xml
