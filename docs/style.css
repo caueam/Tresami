@@ -162,7 +162,7 @@ h1 {
   border: none;
   cursor: pointer;
   padding: 20px 40px;
-  border-radius: 20px;
+  border-radius: 25px;
   color: #fff;
   font-weight: 500;
   font-size: 40px;
@@ -362,7 +362,7 @@ h1 {
   border: none;
   cursor: pointer;
   padding: 20px 75px;
-  border-radius: 20px;
+  border-radius: 25px;
   color: #fffbf1;
   font-weight: 500;
   font-size: 40px;
