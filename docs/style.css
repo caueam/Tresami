@@ -43,7 +43,6 @@ body {
   max-width: 100%;
   position: relative;
 }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -164,7 +163,10 @@ h1 {
 
 .header button:hover {
   background-color: #1b2630;
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }
+
 
 .header button:active {
   transform: scale(0.97);
@@ -1167,7 +1169,8 @@ footer picture img {
   transition-delay: 1000ms;
 }
 
-.servico-item:hover .servico-icon {
-  transform: scale(1.05);
+
+.btn-servico:hover {
+  transform: scale(1.02);
   transition: transform 0.3s ease;
 }
