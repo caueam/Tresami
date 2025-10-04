@@ -586,7 +586,7 @@ footer picture img {
 
 @media (min-width: 6px) and (max-width:490px) {
   .header p {
-    font-size: 25px !important;
+    font-size: 23px !important;
   }
 
   .header button {
@@ -874,6 +874,37 @@ footer picture img {
 
   #um {
     width: 190px;
+  }
+}
+
+@media (max-width: 525px) and (max-height: 700px) {
+  .header {
+    min-height: 95vh;
+    padding: 1px 5px;
+    background-size: cover;
+    background-position: right 21% top 10%;
+  }
+
+  .header h1 {
+    font-size: 35px;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .header p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 35px;
+    padding: 0 10px;
+  }
+  .header button {
+    font-size: 22px;
+    padding: 12px 24px;
+    margin-bottom: 0px;
   }
 }
 
