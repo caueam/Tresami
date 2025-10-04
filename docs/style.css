@@ -43,6 +43,7 @@ body {
   max-width: 100%;
   position: relative;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -91,11 +92,19 @@ body {
 }
 
 .btninsta:hover {
-  transform: translateY(-1px);
+  transform: translateY(-0.6px);
 }
 
 .btnwpp:hover {
-  transform: translateY(-1px);
+  transform: translateY(-0.6px);
+}
+
+.btninsta:active {
+  transform: scale(0.97);
+}
+
+.btnwpp:active {
+  transform: scale(0.97);
 }
 
 .nav-icone img {
@@ -166,7 +175,6 @@ h1 {
   transform: scale(1.02);
   transition: transform 0.3s ease;
 }
-
 
 .header button:active {
   transform: scale(0.97);
@@ -915,6 +923,7 @@ footer picture img {
     margin-bottom: 35px;
     padding: 0 10px;
   }
+
   .header button {
     font-size: 22px;
     padding: 12px 24px;
