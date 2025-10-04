@@ -131,30 +131,33 @@ class ImageCarrossel {
   }
 
   createIndicators() {
-    this.indicators.innerHTML = ""
-    const indicatorCount = this.getIndicatorCount()
+  this.indicators.innerHTML = ""; // limpa qualquer conteúdo antigo
+  const indicatorCount = this.getIndicatorCount();
 
-    for (let i = 0; i < indicatorCount; i++) {
-      const indicator = document.createElement("button")
-      indicator.className = "indicator"
+  for (let i = 0; i < indicatorCount; i++) {
+    const indicator = document.createElement("button");
+    indicator.className = "indicator";
 
-      // 🔹 Acessibilidade: nome para leitores de tela
-      indicator.setAttribute("aria-label", `Slide ${i + 1}`)
-      indicator.setAttribute("aria-controls", "carousel") // opcional, se tiver id do container
-      indicator.setAttribute("aria-current", i === 0 ? "true" : "false") // opcional, indica qual está ativo
+    // Acessibilidade válida
+    indicator.setAttribute("aria-label", `Slide ${i + 1}`);
+    indicator.setAttribute("aria-current", i === this.currentIndex ? "true" : "false");
 
-      indicator.addEventListener("click", () => {
-        if (this.isMobile) {
-          this.goToSlide(i)
-        } else {
-          this.goToSlideDesktop(i)
-        }
-      })
-      this.indicators.appendChild(indicator)
-    }
+    // Clique nos indicadores
+    indicator.addEventListener("click", () => {
+      if (this.isMobile) {
+        this.goToSlide(i);
+      } else {
+        this.goToSlideDesktop(i);
+      }
+    });
 
-    this.updateIndicators()
+    this.indicators.appendChild(indicator);
   }
+
+  // Atualiza visual dos indicadores
+  this.updateIndicators();
+}
+
 
   bindImageEvents() {
     this.items.forEach((item, index) => {
@@ -247,18 +250,16 @@ class ImageCarrossel {
   }
 
   updateIndicators() {
-  const indicators = this.indicators.querySelectorAll(".indicator")
+  const indicators = this.indicators.querySelectorAll(".indicator");
   indicators.forEach((indicator, index) => {
-    // visual
-    indicator.classList.toggle("active", index === this.currentIndex)
-
-    // acessibilidade
-    indicator.setAttribute("aria-current", index === this.currentIndex ? "true" : "false")
-    // garante que o aria-label esteja sempre presente
+    indicator.classList.toggle("active", index === this.currentIndex);
+    indicator.setAttribute("aria-current", index === this.currentIndex ? "true" : "false");
+    
+    // garante que o aria-label sempre exista
     if (!indicator.hasAttribute("aria-label")) {
-      indicator.setAttribute("aria-label", `Slide ${index + 1}`)
+      indicator.setAttribute("aria-label", `Slide ${index + 1}`);
     }
-  })
+  });
 }
 
 
