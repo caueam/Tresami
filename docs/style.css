@@ -287,11 +287,14 @@ h1 {
   opacity: 1;
 }
 
-.overlay p {
-  font-size: 14px;
-  font-weight: 500;
+.servico-text{
+  font-size: 20px;
+  position: relative;
+  top: 12px;
 }
-
+.overlay .bold{
+  font-size: 29px;
+}
 .arrow {
   position: absolute;
   top: 50%;
@@ -726,7 +729,9 @@ footer picture img {
   .servico-text {
     font-size: 16px;
   }
-
+  .overlay .bold{
+  font-size: 25px;
+  }
   /* Carrossel - imagem completa centralizada */
   .carrossel {
     padding: 0 20px;
