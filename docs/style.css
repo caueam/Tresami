@@ -162,7 +162,7 @@ h1 {
   border: none;
   cursor: pointer;
   padding: 20px 40px;
-  border-radius: 25px;
+  border-radius: 40px;
   color: #fff;
   font-weight: 500;
   font-size: 40px;
@@ -287,14 +287,16 @@ h1 {
   opacity: 1;
 }
 
-.servico-text{
+.servico-text {
   font-size: 20px;
   position: relative;
   top: 12px;
 }
-.overlay .bold{
+
+.overlay .bold {
   font-size: 29px;
 }
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -362,7 +364,7 @@ h1 {
   border: none;
   cursor: pointer;
   padding: 20px 75px;
-  border-radius: 25px;
+  border-radius: 40px;
   color: #fffbf1;
   font-weight: 500;
   font-size: 40px;
@@ -651,7 +653,9 @@ footer picture img {
     background-size: cover;
     background-position: right 21% top 10%;
   }
-
+  .header button{
+    border-radius: 35px;
+  }
   .header h1 {
     font-size: 45px;
   }
@@ -675,6 +679,10 @@ footer picture img {
 
   .btn-servico br {
     display: none;
+  }
+
+  .btn-servico {
+    border-radius: 15px;
   }
 
   .header button {
@@ -729,9 +737,11 @@ footer picture img {
   .servico-text {
     font-size: 16px;
   }
-  .overlay .bold{
-  font-size: 25px;
+
+  .overlay .bold {
+    font-size: 25px;
   }
+
   /* Carrossel - imagem completa centralizada */
   .carrossel {
     padding: 0 20px;
