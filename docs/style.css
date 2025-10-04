@@ -694,7 +694,7 @@ footer picture img {
   .servicos h2,
   .como-funciona-title {
     margin-top: 19px;
-    margin-bottom: -87px;
+    margin-bottom: -95px;
     font-size: 36px;
   }
 
@@ -727,7 +727,8 @@ footer picture img {
   }
 
   .servico-title {
-    margin-top: -13.5px;
+    margin-top: 2px;
+    margin-bottom: 25px;
   }
 
   .bold {
