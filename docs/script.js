@@ -247,11 +247,20 @@ class ImageCarrossel {
   }
 
   updateIndicators() {
-    const indicators = this.indicators.querySelectorAll(".indicator")
-    indicators.forEach((indicator, index) => {
-      indicator.classList.toggle("active", index === this.currentIndex)
-    })
-  }
+  const indicators = this.indicators.querySelectorAll(".indicator")
+  indicators.forEach((indicator, index) => {
+    // visual
+    indicator.classList.toggle("active", index === this.currentIndex)
+
+    // acessibilidade
+    indicator.setAttribute("aria-current", index === this.currentIndex ? "true" : "false")
+    // garante que o aria-label esteja sempre presente
+    if (!indicator.hasAttribute("aria-label")) {
+      indicator.setAttribute("aria-label", `Slide ${index + 1}`)
+    }
+  })
+}
+
 
   setupResponsive() {
     let resizeTimeout
