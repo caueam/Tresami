@@ -1,3 +1,20 @@
+function toggleFAQ(index) {
+  const item = document.querySelectorAll('.faq-item')[index];
+  item.classList.toggle('open');
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1); // remove #
+    const item = document.getElementById(hash);
+    if (item) {
+      const index = Array.from(document.querySelectorAll('.faq-item')).indexOf(item);
+      toggleFAQ(index);
+      item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+});
+
 class ImageCarrossel {
   constructor() {
     this.carrossel = document.getElementById("carrossel")
@@ -86,7 +103,7 @@ class ImageCarrossel {
 
     this.carrossel.addEventListener("touchmove", (e) => {
       if (!isDragging) return
-      e.preventDefault() 
+      e.preventDefault()
     })
 
     this.carrossel.addEventListener("touchend", (e) => {
