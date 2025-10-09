@@ -26,6 +26,12 @@ img {
   pointer-events: auto;
 }
 
+.img-cls {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -204,8 +210,9 @@ h1 {
 
 .servico-icon {
   width: 200px;
-  height: auto;
-  margin-bottom: -20px;
+  height: 150px;
+  margin-bottom: 0;
+  object-fit: contain;
 }
 
 .servico-title {
@@ -653,9 +660,11 @@ footer picture img {
     background-size: cover;
     background-position: right 21% top 10%;
   }
-  .header button{
+
+  .header button {
     border-radius: 35px;
   }
+
   .header h1 {
     font-size: 45px;
   }
