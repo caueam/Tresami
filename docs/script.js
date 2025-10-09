@@ -82,11 +82,11 @@ class ImageCarrossel {
       startX = e.touches[0].clientX
       startScrollLeft = this.carrossel.scrollLeft
       isDragging = true
-    })
+    }, { passive: true })
 
     this.carrossel.addEventListener("touchmove", (e) => {
       if (!isDragging) return
-      e.preventDefault()
+      e.preventDefault() 
     })
 
     this.carrossel.addEventListener("touchend", (e) => {
@@ -131,32 +131,32 @@ class ImageCarrossel {
   }
 
   createIndicators() {
-  this.indicators.innerHTML = ""; // limpa qualquer conteúdo antigo
-  const indicatorCount = this.getIndicatorCount();
+    this.indicators.innerHTML = ""; // limpa qualquer conteúdo antigo
+    const indicatorCount = this.getIndicatorCount();
 
-  for (let i = 0; i < indicatorCount; i++) {
-    const indicator = document.createElement("button");
-    indicator.className = "indicator";
+    for (let i = 0; i < indicatorCount; i++) {
+      const indicator = document.createElement("button");
+      indicator.className = "indicator";
 
-    // Acessibilidade válida
-    indicator.setAttribute("aria-label", `Slide ${i + 1}`);
-    indicator.setAttribute("aria-current", i === this.currentIndex ? "true" : "false");
+      // Acessibilidade válida
+      indicator.setAttribute("aria-label", `Slide ${i + 1}`);
+      indicator.setAttribute("aria-current", i === this.currentIndex ? "true" : "false");
 
-    // Clique nos indicadores
-    indicator.addEventListener("click", () => {
-      if (this.isMobile) {
-        this.goToSlide(i);
-      } else {
-        this.goToSlideDesktop(i);
-      }
-    });
+      // Clique nos indicadores
+      indicator.addEventListener("click", () => {
+        if (this.isMobile) {
+          this.goToSlide(i);
+        } else {
+          this.goToSlideDesktop(i);
+        }
+      });
 
-    this.indicators.appendChild(indicator);
+      this.indicators.appendChild(indicator);
+    }
+
+    // Atualiza visual dos indicadores
+    this.updateIndicators();
   }
-
-  // Atualiza visual dos indicadores
-  this.updateIndicators();
-}
 
 
   bindImageEvents() {
@@ -250,17 +250,17 @@ class ImageCarrossel {
   }
 
   updateIndicators() {
-  const indicators = this.indicators.querySelectorAll(".indicator");
-  indicators.forEach((indicator, index) => {
-    indicator.classList.toggle("active", index === this.currentIndex);
-    indicator.setAttribute("aria-current", index === this.currentIndex ? "true" : "false");
-    
-    // garante que o aria-label sempre exista
-    if (!indicator.hasAttribute("aria-label")) {
-      indicator.setAttribute("aria-label", `Slide ${index + 1}`);
-    }
-  });
-}
+    const indicators = this.indicators.querySelectorAll(".indicator");
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle("active", index === this.currentIndex);
+      indicator.setAttribute("aria-current", index === this.currentIndex ? "true" : "false");
+
+      // garante que o aria-label sempre exista
+      if (!indicator.hasAttribute("aria-label")) {
+        indicator.setAttribute("aria-label", `Slide ${index + 1}`);
+      }
+    });
+  }
 
 
   setupResponsive() {
