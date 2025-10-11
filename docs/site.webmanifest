@@ -1,0 +1,21 @@
+{
+  "name": "Tresamí",
+  "short_name": "Tresamí",
+  "description": "Atendimento domiciliar humanizado com equipe multiprofissional.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#b89b5e",
+  "icons": [
+    {
+      "src": "https://tresami.com.br/assets/icons/Logo%20para%20Redes%20Sociais%20192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://tresami.com.br/assets/icons/Logo%20para%20Redes%20Sociais%20512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
